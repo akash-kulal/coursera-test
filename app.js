@@ -14,7 +14,12 @@ angular.module('CounterApp', [])
 
     $scope.countOnce = function () {
       $scope.onceCounter = 1;
-    }
+    };
+
+    $scope.$switch('onceCounter', function(newValue, oldValue){
+      console.log("old value:", oldValue);
+        console.log("new value:", newValue);
+    })
   }
 
 

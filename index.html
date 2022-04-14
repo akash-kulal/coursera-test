@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='CounterApp'>
 <head>
-<title>Angular JS</title>
+  <meta charset="utf-8">
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+  <style> body { font-size: 1.2em; }</style>
+<title>np-repeat</title>
 </head>
 <body>
-<h1>Welcome</h1>
 <h1>First Angular Website .!!!!!</h1>
+<div ng-controller='CounterController'>
+  <button ng-click="showNumberOfWatchers()">
+    Log # of Watchers</button>
 
+    <div>
+        <button ng-click="countOnce()">Up once counter (once)</button>
+    </div>
+  </div>
 
 </body>
 </html>
